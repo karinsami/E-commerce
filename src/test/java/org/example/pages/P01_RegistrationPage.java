@@ -10,11 +10,7 @@ public class P01_RegistrationPage {
         this.driver = driver ;
         PageFactory.initElements(driver,this);
     }
-    public WebElement RegisterLink()
-    {
-        return driver.findElement(By.className("ico-register"));
-    }
-
+    public WebElement RegisterLink() {return driver.findElement(By.className("ico-register"));}
     public WebElement Gender(){
         return   driver.findElement(By.id("gender-male"));
     }
