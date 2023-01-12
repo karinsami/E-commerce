@@ -16,7 +16,8 @@ public class D01_registrationSteps {
     @Given("user navigate to registration page")
     public void user_navigate_to_registration_page() throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
-        driver.navigate().to("https://demo.nopcommerce.com/register?returnUrl=%2Fcart");
+        registrationPage.RegisterLink().click();
+//        driver.navigate().to("https://demo.nopcommerce.com/register?returnUrl=%2Fcart");
         Thread.sleep(3000);
     }
     @When("user select gender type")

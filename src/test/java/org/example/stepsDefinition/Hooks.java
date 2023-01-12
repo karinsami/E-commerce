@@ -22,7 +22,7 @@ public class Hooks {
     @After
     public static void quitDriver() throws InterruptedException {
         Thread.sleep(3000);
-//        driver.quit();
+        driver.quit();
         System.out.println("Browser Closed");
 
     }
