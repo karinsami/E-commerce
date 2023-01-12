@@ -5,6 +5,5 @@ Feature: TC_05switchCurrancy | logged in users could switch currancy
     When   user login with "valid" "Mervat@Mervat.Mervat" and "Mervat Bardo"
     And    user press on login button
     And   user login to the system successfully
-    And   user click on currancy dropdown menu
     And   User choose Euro
-    Then  User could switch between currencies US-Euro
+    Then vertify that prices change to Euro
