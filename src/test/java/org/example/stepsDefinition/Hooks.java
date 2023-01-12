@@ -13,7 +13,7 @@ public class Hooks {
         String chromePath = System.getProperty("user.dir") +"/src/main/resources/chromedriver.exe";
         System.setProperty("webdriver.chrome.driver",chromePath );
         driver = new ChromeDriver();
-        driver.navigate().to("https://the-internet.herokuapp.com/login");
+        driver.navigate().to("https://demo.nopcommerce.com/");
         driver.manage().window().maximize();
         System.out.println("Browser Opened");
         Thread.sleep(3000);
@@ -22,7 +22,7 @@ public class Hooks {
     @After
     public static void quitDriver() throws InterruptedException {
         Thread.sleep(3000);
-        driver.quit();
+//        driver.quit();
         System.out.println("Browser Closed");
 
     }
