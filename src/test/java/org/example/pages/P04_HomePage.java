@@ -49,4 +49,11 @@ public class P04_HomePage {
     public WebElement Shoes() {
         return driver.findElement(By.linkText("Shoes"));
     }
+    public WebElement AddToWishlist() {
+        return driver.findElements(By.className("add-to-wishlist-button")).get(2);}
+    public WebElement AddToComparelist() {
+        return driver.findElements(By.className("add-to-compare-list-button")).get(0);}
+    public WebElement GoToCart() {return driver.findElement(By.id("topcartlink"));}
+
+
 }

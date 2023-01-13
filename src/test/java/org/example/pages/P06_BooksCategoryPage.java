@@ -14,7 +14,7 @@ public class P06_BooksCategoryPage {
     public WebElement AddToCart(){
         return   driver.findElements(By.className("product-box-add-to-cart-button")).get(0);
     }
-    public WebElement AddToCartSuccessMessage(){
+    public WebElement SuccessMessage(){
         return   driver.findElement(By.className("content"));
 
     }

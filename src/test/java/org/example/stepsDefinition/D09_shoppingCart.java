@@ -27,7 +27,7 @@ public class D09_shoppingCart {
     @Then("vertify item is added to cart successfully")
     public void vertify_item_is_added_to_cart_successfully() throws InterruptedException {
         Thread.sleep(3000);
-        Assert.assertTrue(BooksCategoryPage.AddToCartSuccessMessage().getText().contains("The product has been added to your shopping cart"));
+        Assert.assertTrue(BooksCategoryPage.SuccessMessage().getText().contains("The product has been added to your shopping cart"));
 
     }
 }
